@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/homepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="top"
+        android:text="Homepage"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Welcome "
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homepage" />
+
+    <TextView
+        android:id="@+id/txtusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Username"
+        android:textColor="@color/link"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/welcome"
+        app:layout_constraintTop_toBottomOf="@+id/homepage" />
+
+    <TextView
+        android:id="@+id/your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Your "
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/welcome"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+    <TextView
+        android:id="@+id/txtemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="email"
+        android:textColor="@color/link"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/welcome"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+    <TextView
+        android:id="@+id/activated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="has been activated"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/txtemail"
+        app:layout_constraintTop_toBottomOf="@id/welcome" />
+
+    <TextView
+        android:id="@+id/yourr_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Your"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/your"
+        app:layout_constraintTop_toBottomOf="@id/your" />
+
+    <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="phone"
+        android:textColor="@color/link"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/yourr_phone"
+        app:layout_constraintTop_toBottomOf="@id/your" />
+
+    <TextView
+        android:id="@+id/registered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="has been registered"
+
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@id/yourr_phone"
+        app:layout_constraintTop_toBottomOf="@id/your" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="137dp"
+        android:layout_marginBottom="111dp"
+        android:background="@drawable/btn_login"
+        android:text="Logout"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourr_phone"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
