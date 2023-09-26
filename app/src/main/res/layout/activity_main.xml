@@ -132,7 +132,8 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle"
         app:layout_constraintStart_toStartOf="@id/by_check"
-        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        android:onClick="terms_"/>
 
     <TextView
         android:id="@+id/and"
@@ -158,7 +159,9 @@
         android:textSize="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle"
         app:layout_constraintStart_toStartOf="@id/and"
-        app:layout_constraintTop_toBottomOf="@+id/login_password" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        android:id="@+id/conditions"
+        android:onClick="conditions_"/>
 
     <Button
         android:id="@+id/btn_login"
@@ -200,7 +203,9 @@
         android:textColor="@color/link"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@id/account"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        android:id="@+id/login_txt"
+        android:onClick="login_"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

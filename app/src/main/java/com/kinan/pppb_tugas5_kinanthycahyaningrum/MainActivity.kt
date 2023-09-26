@@ -2,8 +2,10 @@ package com.kinan.pppb_tugas5_kinanthycahyaningrum
 
 import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContract
@@ -22,9 +24,13 @@ class MainActivity : AppCompatActivity() {
                 loginPhone.text.clear()
                 loginPassword.text.clear()
                 rectangle.isChecked = false
-            }
+
+
+                }
             }
         }
+
+
 
     companion object {
         const val EXTRA_USERNAME = "extra_username"
@@ -66,5 +72,25 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    fun login_() {
+        val intentObj = Intent(Intent.ACTION_VIEW)
+        intentObj.data = Uri.parse("https://youtu.be/dQw4w9WgXcQ?feature=shared")
+        startActivity(intentObj)
+
+    }
+
+
+    fun terms_(view: View) {
+        val intentObj = Intent(Intent.ACTION_VIEW)
+        intentObj.data = Uri.parse("https://youtu.be/dQw4w9WgXcQ?feature=shared")
+        startActivity(intentObj)
+    }
+
+    fun conditions_(view: View) {
+        val intentObj = Intent(Intent.ACTION_VIEW)
+        intentObj.data = Uri.parse("https://youtu.be/dQw4w9WgXcQ?feature=shared")
+        startActivity(intentObj)
     }
 }
